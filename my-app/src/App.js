@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { UserAuthContextProvider } from "./components/Login/UserAuthContext";
 import Nav from "./components/Nav";
 import Basket from "./components/Basket";
 import { BasketProvider } from "./components/basketContext";
@@ -20,7 +19,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <UserAuthContextProvider>
+      
         <div className="App">
           <BasketProvider>
             <Nav />
@@ -51,7 +50,7 @@ function App() {
           </BasketProvider>
           <Footer />
         </div>
-      </UserAuthContextProvider>
+     
     </Router>
   );
 }
